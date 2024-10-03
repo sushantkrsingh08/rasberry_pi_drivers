@@ -42,14 +42,6 @@ static int __init ModuleInit(void) {
 	
 	timer_setup(&my_timer, timer_callback, 0);
 	mod_timer(&my_timer, jiffies + msecs_to_jiffies(1000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(2000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(3000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(4000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(5000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(6000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(7000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(8000));
-	mod_timer(&my_timer, jiffies + msecs_to_jiffies(1000));
 
 	return 0;
 }
